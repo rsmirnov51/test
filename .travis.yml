@@ -5,7 +5,7 @@ dist: trusty
 os: linux
 
 script:
-- cmake -H. -B_builds
-- cmake --build _builds/
+- cmake -H. -B_build
+- cmake --build _build/
 tests:
-./_builds/tests -s
+./_build/tests -s

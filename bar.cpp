@@ -10,5 +10,8 @@ int stepen3(int N)
   return res;
 }
 
-TEST_CASE("Stepen is comp", [stepen]){
+TEST_CASE("Stepen function complete", [stepen3]){
+    REQUIRE( stepen3(1) == 3 );
+    REQUIRE( stepen3(2) == 9 );
+    REQUIRE( stepen3(3) == 27 );
 }

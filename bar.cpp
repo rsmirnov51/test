@@ -1,17 +1,15 @@
+#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "iostream"
 
 using namespace std;
 
-int stepen3(int N)
-{
-  int res = 1;
-  for (int i = 0; i < N; i++)  res *= 3;
-  return res;
+unsigned int Factorial( unsigned int number ) {
+    return number <= 1 ? number : Factorial(number-1)*number;
 }
 
-TEST_CASE("Stepen function complete", "[stepen3]"){
-    REQUIRE( stepen3(1) == 3 );
-    REQUIRE( stepen3(2) == 9 );
-    REQUIRE( stepen3(3) == 27 );
+TEST_CASE("Stepen function complete", "[bar]"){
+    REQUIRE( Factorial(1) == 1 );
+    REQUIRE( Factorial(2) == 2 );
+    REQUIRE( Factorial(3) == 6 );
+    REQUIRE( Factorial(10) == 3628800 );
 }

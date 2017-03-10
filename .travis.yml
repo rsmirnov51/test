@@ -1,11 +1,8 @@
 language: cpp
-sudo: required
-dist: trusty
 
 os: linux
 
 script:
-- cmake -H. -B_build
-- cmake --build _build/
-tests:
-./_build/tests -s
+- cmake -H. -B_builds
+- cmake --build _builds/
+- ./_build/tests

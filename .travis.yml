@@ -5,4 +5,4 @@ os: linux
 script:
 - cmake -H. -B_builds
 - cmake --build _builds/
-- ./_build/tests
+- ./_builds/tests

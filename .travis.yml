@@ -1,3 +1,10 @@
-cmake -H. -B_build
-cmake -build _build
-./_build/test
+language: cpp
+sudo: required
+dist: trusty
+
+os: linux
+
+script:
+- cmake -H. -B_build
+- cmake -build _build
+- ./_build/test

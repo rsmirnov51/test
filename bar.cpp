@@ -1,3 +1,3 @@
 #include <catch.hpp>
-TEST_CASE(){
+TEST_CASE("Stepen is comp", [stepen]){
 }

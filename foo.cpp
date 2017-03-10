@@ -10,7 +10,7 @@ int stepen2(int N)
   return res;
 }
 
-TEST_CASE("Stepen function complete", ["stepen2"]){
+TEST_CASE("Stepen function complete", "[stepen2]"){
     REQUIRE( stepen2(1) == 2 );
     REQUIRE( stepen2(2) == 4 );
     REQUIRE( stepen2(3) == 8 );

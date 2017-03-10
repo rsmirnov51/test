@@ -1,8 +1,16 @@
 #define CATH_CONFIG_MAIN
 #include "catch.cpp"
 #include <iostream>
+#include "main.h"
 
 using namespace std;
+
+int stepen(int N)
+{
+  int res = 1;
+  for (int i = 0; i < N; i++)  res *= 2;
+  return res;
+}
 
 void main()
 {

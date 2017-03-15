@@ -1,2 +1,2 @@
 project(tests)
-add_executable(tests main.cpp bar.cpp foo.cpp)
+add_executable(tests main.cpp bar.cpp)
